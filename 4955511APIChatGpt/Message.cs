@@ -8,7 +8,7 @@ namespace _4955511APIChatGpt
 {
     public class Message
     {
-        public string? content { get; set; }
+        public string content { get; set; }
 
     }
 }

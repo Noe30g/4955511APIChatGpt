@@ -7,7 +7,7 @@ namespace _4955511APIChatGpt
     public partial class MainPage : ContentPage
     {
         private readonly HttpClient _client;
-        private const string ApiKey = "ApiKey";
+        private const string ApiKey = "YOUR_API_KEY";
         public MainPage()
         {
             InitializeComponent();
@@ -26,7 +26,7 @@ namespace _4955511APIChatGpt
         {
             var requestBody = new
             {
-                model = "gpt-3.5-turbo",
+                model = "",
                 messages = new[]
                 {
                     new { role = "user", content = query }
