@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="_4955511APIChatGpt.MainPage">
+
+    <VerticalStackLayout Padding="10">
+        <Entry x:Name="userInput" Placeholder="Enter your question..." />
+        <Button Text="Ask ChatGPT" Clicked="OnAskButtonClicked" />
+        <Label x:Name="responseLabel" Text="Response will appear here..." />
+    </VerticalStackLayout>
+    
+</ContentPage>
