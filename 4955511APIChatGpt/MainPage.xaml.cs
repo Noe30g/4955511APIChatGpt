@@ -7,12 +7,12 @@ namespace _4955511APIChatGpt
     public partial class MainPage : ContentPage
     {
         private readonly HttpClient _client;
-        // private const string ApiKey = "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";
+        private const string ApiKey = "ApiKey";
         public MainPage()
         {
             InitializeComponent();
             _client = new HttpClient();
-            //_client.DefaultRequestHeaders.Add("Authorization", $"Bearer {ApiKey}");
+            _client.DefaultRequestHeaders.Add("Authorization", $"Bearer {ApiKey}");
         }
 
         private async void OnAskButtonClicked(object sender, EventArgs e)
